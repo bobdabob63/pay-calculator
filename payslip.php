@@ -1,8 +1,9 @@
 <?php
 include_once "header.php";
-
+$a = 12;
 echo <<<STR
-<h1>Hello</h1>
+$a
+<h1>Your Pay Slip</h1>
 STR;
 
 include_once "footer.php";

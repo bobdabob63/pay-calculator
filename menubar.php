@@ -1,3 +1,22 @@
+<?php
+$login_text = "";
+if (isset($_SESSION['user'])) {
+    $login_text = <<<STR
+    <li class="nav-item">
+        <a class="nav-link" href="user.php">{$_SESSION['user']}</a>
+    </li>
+    STR;
+} else {
+    $login_text = <<<STR
+    <li class="nav-item">
+        <a class="nav-link" href="login.php">Log In</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="sign_up.php">Sign Up</a>
+    </li>
+    STR;
+}
+echo <<<STR
 <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -13,6 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="payslip.php">Pay Slip</a>
                     </li>
+                    $login_text
                 </ul>
             </div>
         </div>
@@ -21,3 +41,4 @@
     <br>
     <br>
 </header>
+STR;

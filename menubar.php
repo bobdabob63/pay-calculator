@@ -16,7 +16,8 @@ if (isset($_SESSION['user'])) {
     </li>
     STR;
 }
-echo <<<STR
+?>
+
 <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -32,7 +33,7 @@ echo <<<STR
                     <li class="nav-item">
                         <a class="nav-link" href="payslip.php">Pay Slip</a>
                     </li>
-                    $login_text
+                    <?php echo $login_text?>
                 </ul>
             </div>
         </div>
@@ -41,4 +42,3 @@ echo <<<STR
     <br>
     <br>
 </header>
-STR;

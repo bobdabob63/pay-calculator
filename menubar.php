@@ -19,7 +19,7 @@ if (isset($_SESSION['user'])) {
 ?>
 
 <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex flex-column container-fluid">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Website</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +37,8 @@ if (isset($_SESSION['user'])) {
                 </ul>
             </div>
         </div>
+        <div class="container-fluid">
+            <p class="text-light">Database driven pay calculator</p>
+        </div>
     </nav>
-    <br>
-    <br>
-    <br>
 </header>

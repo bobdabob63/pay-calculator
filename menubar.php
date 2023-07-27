@@ -19,9 +19,9 @@ if (isset($_SESSION['user'])) {
 ?>
 
 <header data-bs-theme="light">
-    <nav class="navbar navbar-expand-md navbar-light bg-light d-flex flex-column container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-orange d-flex flex-column container-fluid">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Website</a>
+            <a class="navbar-brand" href="#">Pay Calculator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

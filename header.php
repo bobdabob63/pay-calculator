@@ -13,3 +13,6 @@ session_start();
 
 <?php
 include_once "menubar.php";
+?>
+
+<div class="container">

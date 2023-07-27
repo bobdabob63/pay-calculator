@@ -2,9 +2,7 @@
 include_once "header.php";
 ?>
 
-<div class="container-fluid">
-    <h1>Hello</h1>
-</div>
+<h1>Index</h1>
 
 <?php
 include_once "footer.php";
